@@ -1,0 +1,245 @@
+.aperture__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 2rem;
+  font-size: 0.8rem;
+  color: #555;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.aperture__left {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  max-width: 50rem;
+}
+
+.aperture__left__title {
+  color: #777;
+  padding: 0.5rem;
+}
+
+.aperture__input {
+  display: flex;
+  background: #37363b;
+  padding: 1rem;
+  border: 1px solid #444;
+  border-radius: 1rem;
+  margin: 0 0 1rem 0;
+  min-height: 4rem;
+  min-width: 7rem;
+}
+
+.prompt {
+  cursor: text;
+  display: flex;
+  color: white;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+[data-placeholder]:empty:after {
+  content: attr(data-placeholder);
+  color: #777;
+}
+
+.generateBtn__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.generateBtn {
+  cursor: pointer;
+  background: #3730a3;
+  border: none;
+  color: #999;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.aperture__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #444;
+  border-radius: 0.8rem;
+  min-width: 16rem;
+  height: fit-content;
+  margin-top: 2rem;
+  padding: 1.2rem;
+}
+
+.aperture__right__title {
+  cursor: default;
+  color: #777;
+}
+
+.dimensions {
+  cursor: default;
+  display: flex;
+  gap: 0.5rem;
+  color: #777;
+}
+
+/* ------------ range slider ------------- */
+.aperture__right .rangeSlider {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 0.25rem;
+}
+
+.aperture__right input[type="range"]::-moz-range-thumb {
+  background: #fff;
+}
+
+.aperture__right input[type="range"]::-moz-range-progress {
+  background-color: #5551d9;
+  height: 0.3rem;
+}
+
+.aperture__right input[type="range"]::-webkit-slider-runnable-track {
+  background: #444;
+  height: 0.25rem;
+}
+/* ---------------------- */
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderContainer:hover .visiualizeDimension {
+  visibility: visible;
+}
+
+[data]:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.visiualizeDimension {
+  position: absolute;
+  content: attr(data);
+  background: #333;
+  border: 1px solid #333;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.visiualizeDimension::after {
+  position: absolute;
+  content: attr(data);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0.4rem 0;
+  background: #181818;
+}
+
+.visiualizeDimension::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 0.4rem;
+  background: #181818;
+}
+
+.sliderResult {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slow-fast {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  line-height: 1.5rem;
+  width: 5.2rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.sf-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0 0.45rem;
+  color: #777;
+}
+
+.sf-btn-active {
+  background: #444;
+  color: white;
+}
+
+#modelType {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.3rem;
+  margin-top: -0.7rem;
+  width: fit-content;
+}
+
+#modelType:hover {
+  background: #222;
+}
+
+.models {
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  position: absolute;
+  margin-top: 12.4rem;
+  cursor: pointer;
+  list-style-type: none;
+  width: fit-content;
+  display: none;
+}
+
+.models li {
+  line-height: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.models li:hover {
+  background: #444;
+}
+
+/* ------------------------------------------- */
+@media (max-width: 640px) {
+  .aperture__container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .aperture__right {
+    order: 0;
+    margin: 0 0;
+    width: 90%;
+  }
+  .generateBtn__container {
+    justify-content: center;
+  }
+  .aperture__left {
+    order: 1;
+  }
+}

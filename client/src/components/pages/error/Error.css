@@ -1,0 +1,23 @@
+.error__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__msg{
+  font-size: 1.2rem;
+  margin-top: 52px;
+}
+
+.error__btn{
+  display: flex;
+  gap: 0.5rem;
+  background: #403f46;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.8rem 0.8rem;
+  margin: 1rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,89 @@
+.docs__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50%;
+}
+
+.docs__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs__container img {
+  margin: 5rem 0 3.4rem 0;
+  width: 48rem;
+  border-radius: 1rem;
+}
+
+.docs__content h2,
+h3 {
+  font-weight: lighter;
+}
+
+.docs__content p {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+}
+
+.blackBkg {
+  background: black;
+}
+
+.blueLink a {
+  font-family: Inconsolata;
+  color: #19acf0;
+  font-size: 1.05rem;
+}
+
+.docs__content {
+  width: 100%;
+}
+/* -------------------------------------- */
+.docs__json {
+  display: flex;
+  flex-direction: column;
+  background: #2a2633;
+}
+
+.docs__json div {
+  color: #555;
+  font-family: Inconsolata;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.docs__json .line {
+  margin: 0 2rem;
+}
+
+.docs__json .tab {
+  margin: 0 0.5rem;
+  color: inherit;
+}
+
+.docs__json .key {
+  color: #9a86fd;
+  font-family: inherit;
+}
+
+.docs__json .value {
+  font-family: inherit;
+  color: #ffcc99;
+}
+.docs__json .colon {
+  color: #e09142;
+}
+/* ------------------------------------ */
+.discordBtn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid #444;
+  width: 10rem;
+  color: #888;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}

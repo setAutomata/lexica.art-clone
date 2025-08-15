@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Image Server",
+  "license": "ISC",
+  "author": "setAutomata",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node --env-file=.env index.js",
+    "dev": "node --watch --env-file=.env index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "image-size": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/image-size": "^0.7.0",
+    "@types/node": "^22.15.17"
+  }
+}

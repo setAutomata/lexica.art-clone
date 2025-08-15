@@ -1,0 +1,26 @@
+.mainBody {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+@media (max-width: 640px) {
+  .mainBody{
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none;
+    bottom: 0;
+  }
+}

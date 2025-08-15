@@ -1,0 +1,207 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Home-logo {
+  height: 4rem;
+  margin-top: 9.5rem;
+}
+
+.Home-aperture-btn {
+  border: 1px solid #3a3a44;
+  background: #2c2c35;
+  font-size: 0.83rem;
+  color: #727de0;
+  border-radius: 4px;
+  padding: 15px 37px;
+  margin: 25px;
+}
+
+.HomeInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.HomeInput div {
+  display: flex;
+  justify-content: center;
+}
+
+.inputRow {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  width: 100%;
+}
+
+#verBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+}
+
+#verBtn:hover {
+  background: #111;
+}
+
+.lexAperture {
+  cursor: pointer;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  animation: slideDown 400ms ease-in;
+}
+
+@keyframes slideDown {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.lexAperture:hover {
+  background: #00000042;
+}
+
+.Home-image-container {
+  position: relative;
+  column-gap: 0.3rem;
+  margin: 2rem 1.5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  clip-path: inset(0% 0% 0% 0% round 1.5rem);
+}
+
+.Home-image-container img {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  box-shadow: 1px 1px 2px black;
+  margin-bottom: 0.3rem;
+}
+
+.cell {
+  cursor: pointer;
+  position: relative;
+}
+
+.cell:hover::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  background-image: linear-gradient(0deg, #000000b2, transparent, transparent);
+}
+
+.topOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.smallBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5% 2% 5%;
+  border-radius: 0.4rem;
+  margin: 5%;
+  background: #111111a7;
+}
+
+.smallBtn:hover {
+  background: #111;
+}
+
+.cell:hover .topOverlay {
+  visibility: visible;
+}
+
+.topOverlay img {
+  box-shadow: none;
+  width: 13px;
+}
+
+.loading {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  background: #6c404057;
+  border: 1px solid red;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: red;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: leftRight 2s infinite;
+}
+
+@keyframes leftRight {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.thumbValue {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  left: -1.2rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  background: #777;
+  visibility: hidden;
+}
+
+.thumbValue::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #777 transparent transparent transparent;
+}
+
+.prompt {
+  padding: 0.5rem;
+}

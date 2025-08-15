@@ -1,0 +1,17 @@
+.roundedButton {
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 0;
+  width: 145px;
+  margin: 10px 5px;
+  outline: none;
+}
+
+.blueButton:hover{
+  background: #4642ad;
+}
+
+.silverButton:hover{
+  background: #81818d;
+}

@@ -1,0 +1,53 @@
+.InputBox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  width: 100%;
+  gap:0.5rem;
+}
+
+.InputBox {
+  display: flex;
+  align-items: center;
+  background: #3f3f46;
+  padding: 3px 5px;
+  margin: 5px 0;
+  border-radius: 20px;
+  width: inherit;
+  max-width: 32rem;
+}
+
+.InputBox input[type="text"] {
+  background: transparent;
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 5px;
+  width: inherit;
+}
+
+.InputBox input::placeholder {
+  color: #888;
+}
+
+.InputBox-container img {
+  height: 1rem;
+  margin: 0 10px;
+}
+
+.upload__btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  background: transparent;
+  display: flex;
+  padding: 0.6rem 0.01rem;
+  border-radius: 50%;
+}
+
+.upload__btn:hover {
+  background: #222;
+}
+
