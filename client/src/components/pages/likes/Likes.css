@@ -1,0 +1,17 @@
+.likes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.6rem auto;
+}
+
+.likes__title {
+  font-family: Melodrama-Bold;
+  font-size: 4.5rem;
+}
+
+.likes__text{
+  color: #888;
+  font-size: 0.9rem;
+  margin: 2rem 0;
+}
